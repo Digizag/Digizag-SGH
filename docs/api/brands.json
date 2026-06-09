@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-09T09:20:12Z",
+  "last_updated": "2026-06-09T10:15:31Z",
   "source": "Digizag X SGH Brands",
-  "total": 5,
+  "total": 6,
   "brands": [
     {
       "brand_name": "United Pharmacy",
@@ -10,7 +10,7 @@
       ],
       "discount": "10% Discount\n\nNote: The code will not work if the basket just include milk or diapers",
       "discount_content": "Discount Up to 10%",
-      "website": "2 Types:\n- 10% Discount codes can be used per user for only one time\n- 5% discount codes without usage cap\n\nNote: The code will not work if the basket just include milk or diapers",
+      "website": "https://unitedpharmacy.sa/",
       "coupon_code": "Test",
       "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
     },
@@ -21,7 +21,7 @@
       ],
       "discount": "3% with a maximum discount of 250 SAR",
       "discount_content": "Discount Up to 250 SAR",
-      "website": "3% with a maximum discount of 250 SAR",
+      "website": "https://daralamirat.com.sa/",
       "coupon_code": "Test",
       "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
     },
@@ -32,7 +32,7 @@
       ],
       "discount": "7% discount Hotels\n5% Cashback Flights",
       "discount_content": "Discount Up to 7%",
-      "website": "7% discount Hotels\n5% Cashback Flights\nall coupons valid until 31/03/2026 , points valid until End of 2026",
+      "website": "https://almatar.com/en/",
       "coupon_code": "Test",
       "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
     },
@@ -43,7 +43,7 @@
       ],
       "discount": "New Users: 10% OFF (Up to 50 AED/SAR Cashback)\n Existing Users: 5% OFF (Up to 10 AED/SAR Cashback)",
       "discount_content": "Cashback Up to 50 SAR",
-      "website": "KSA & UAE\nNew Users: 10% OFF (Up to 50 AED/SAR)\n Existing Users: 5% OFF (Up to 10 AED/SAR)\n\nFor Toys:\nNew Users: 10% OFF (Capped at 100 SAR/AED).\nReturning Users: 5% OFF (Capped at 50 SAR/AED).\n\n\nKuwait / Oman / Bahrain / Qatar: \nNew: 10% off (up to 50 AED)\nExisting : 10% off (up to 50 AED)",
+      "website": "https://www.noon.com/uae-en",
       "coupon_code": "Test",
       "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
     },
@@ -54,7 +54,18 @@
       ],
       "discount": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10",
       "discount_content": "Cashback Up to 10 SAR",
-      "website": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10\n       No minimum spend required",
+      "website": "https://www.namshi.com/",
+      "coupon_code": "Tessst",
+      "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
+    },
+    {
+      "brand_name": "Namshi/test",
+      "targeting_geos": [
+        "KSA/UAE"
+      ],
+      "discount": "5% cashback for new & repeat customers\n        Cashback cap: Up to AED/SAR 10",
+      "discount_content": "Cashback Up to 10 SAR",
+      "website": "https://www.namshi.com/",
       "coupon_code": "Tessst",
       "brand_logo": "https://media.go2speed.org/brand/files/digizag/1166/thumbnails_100/%D9%85%D9%88%D9%82%D8%B9%20%D9%86%D9%88%D9%86.png?15643"
     }
