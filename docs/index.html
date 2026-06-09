@@ -80,7 +80,7 @@
 
   <div class="header">
     <h1>Digizag x SGH Brands API <span class="pill">Live</span></h1>
-    <p>A public JSON feed of all active SGH brand offers, coupon codes, and discount details. The data is pulled automatically from Google Sheets every 30 minutes with no manual steps needed. No authentication required to read.</p>
+    <p>A public JSON feed of all active SGH brand offers, coupon codes, and discount details. The data is pulled automatically from Google Sheets every 15 minutes with no manual steps needed. No authentication required to read.</p>
   </div>
 
   <div class="tabs">
@@ -106,7 +106,7 @@
     <div class="card">
       <h2>What this API returns</h2>
       <p>One JSON file containing every brand in the SGH partnership sheet. Each brand entry includes its name, the geo markets it targets, the discount terms, the active coupon code, and the brand logo URL.</p>
-      <p>The file is regenerated every 30 minutes by a GitHub Actions job that reads the source Google Sheet directly. The <code>last_updated</code> field in the response tells you exactly when the last sync ran.</p>
+      <p>The file is regenerated every 15 minutes by a GitHub Actions job that reads the source Google Sheet directly. The <code>last_updated</code> field in the response tells you exactly when the last sync ran.</p>
     </div>
 
     <div class="card">
