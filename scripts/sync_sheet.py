@@ -15,9 +15,10 @@ from urllib.error import URLError
 
 SHEET_ID = "13XVfExaeMHiV2Lw6AsuuSGEXQG_4z_Yf8pV6u6pPdeE"
 GID = "0"
+# gviz endpoint is significantly less cached than the /export CSV URL
 CSV_URL = (
     f"https://docs.google.com/spreadsheets/d/{SHEET_ID}"
-    f"/export?format=csv&gid={GID}"
+    f"/gviz/tq?tqx=out:csv&gid={GID}"
 )
 OUTPUT_PATH = os.path.join(
     os.path.dirname(__file__), "..", "docs", "api", "brands.json"
