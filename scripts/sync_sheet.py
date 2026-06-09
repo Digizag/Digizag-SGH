@@ -20,7 +20,7 @@ CSV_URL = (
     f"/export?format=csv&gid={GID}"
 )
 OUTPUT_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "public", "api", "brands.json"
+    os.path.dirname(__file__), "..", "docs", "api", "brands.json"
 )
 
 COLUMNS = {

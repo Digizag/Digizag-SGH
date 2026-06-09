@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/api/brands.json
+          git add docs/api/brands.json
           # Only commit if the file actually changed
           git diff --cached --quiet || git commit -m "chore: sync brands data [skip ci]"
           git push
