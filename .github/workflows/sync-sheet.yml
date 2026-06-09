@@ -3,7 +3,7 @@ name: Sync Google Sheet → JSON
 on:
   schedule:
     # Runs every 30 minutes
-    - cron: "*/30 * * * *"
+    - cron: "*/15 * * * *"
   push:
     branches: [main]
   workflow_dispatch: # manual trigger from GitHub UI
