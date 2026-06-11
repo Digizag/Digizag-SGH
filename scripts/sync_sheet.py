@@ -8,18 +8,14 @@ import csv
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from io import StringIO
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from urllib.error import URLError
 
 SHEET_ID = "13XVfExaeMHiV2Lw6AsuuSGEXQG_4z_Yf8pV6u6pPdeE"
 GID = "0"
-# gviz endpoint is significantly less cached than the /export CSV URL
-CSV_URL = (
-    f"https://docs.google.com/spreadsheets/d/{SHEET_ID}"
-    f"/gviz/tq?tqx=out:csv&gid={GID}"
-)
 OUTPUT_PATH = os.path.join(
     os.path.dirname(__file__), "..", "docs", "api", "brands.json"
 )
@@ -35,9 +31,23 @@ COLUMNS = {
 }
 
 
-def fetch_csv(url: str) -> list[list[str]]:
+def fetch_csv() -> list[list[str]]:
+    # gviz endpoint + cache-busting timestamp + no-cache headers to avoid
+    # Google's CDN serving stale, partially-updated rows
+    url = (
+        f"https://docs.google.com/spreadsheets/d/{SHEET_ID}"
+        f"/gviz/tq?tqx=out:csv&gid={GID}&_={time.time_ns()}"
+    )
+    req = Request(
+        url,
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+        },
+    )
+
     try:
-        with urlopen(url, timeout=15) as resp:
+        with urlopen(req, timeout=15) as resp:
             content = resp.read().decode("utf-8")
     except URLError as exc:
         print(f"ERROR fetching sheet: {exc}", file=sys.stderr)
@@ -108,8 +118,8 @@ def parse_rows(rows: list[list[str]]) -> list[dict]:
 
 
 def main():
-    print(f"Fetching sheet from: {CSV_URL}")
-    rows = fetch_csv(CSV_URL)
+    print(f"Fetching sheet {SHEET_ID} (gid={GID})")
+    rows = fetch_csv()
     print(f"  {len(rows)} rows fetched (including header)")
 
     brands = parse_rows(rows)
