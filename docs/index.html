@@ -112,9 +112,9 @@
     <div class="card">
       <h2>Quick test</h2>
       <div class="lang-label">curl</div>
-      <pre id="curl-example">curl https://anashamad9.github.io/saudi-germany-hospital/api/brands.json</pre>
+      <pre id="curl-example">curl https://digizag.github.io/Digizag-SGH/api/brands.json</pre>
       <div class="lang-label" style="margin-top:16px">JavaScript (browser or Node)</div>
-      <pre>const res = await fetch("https://anashamad9.github.io/saudi-germany-hospital/api/brands.json");
+      <pre>const res = await fetch("https://digizag.github.io/Digizag-SGH/api/brands.json");
 const data = await res.json();
 console.log(data.brands);</pre>
     </div>
@@ -152,7 +152,7 @@ console.log(data.brands);</pre>
           <div class="step-body">
             <h3>Fetch the JSON in your page</h3>
             <p>Call the endpoint with the browser Fetch API. No API key or header is needed.</p>
-            <pre>fetch("https://anashamad9.github.io/saudi-germany-hospital/api/brands.json")
+            <pre>fetch("https://digizag.github.io/Digizag-SGH/api/brands.json")
   .then(res => res.json())
   .then(data => {
     const brands = data.brands;
@@ -199,7 +199,7 @@ console.log(data.brands);</pre>
 export function useBrands() {
   const [brands, setBrands] = useState([]);
   useEffect(() => {
-    fetch("https://anashamad9.github.io/saudi-germany-hospital/api/brands.json")
+    fetch("https://digizag.github.io/Digizag-SGH/api/brands.json")
       .then(r => r.json())
       .then(d => setBrands(d.brands));
   }, []);
@@ -214,7 +214,7 @@ export function useBrands() {
       <h2>Connect from Python (backend or script)</h2>
       <pre>import requests
 
-API = "https://anashamad9.github.io/saudi-germany-hospital/api/brands.json"
+API = "https://digizag.github.io/Digizag-SGH/api/brands.json"
 
 response = requests.get(API)
 data = response.json()
@@ -238,7 +238,7 @@ for brand in data["brands"]:
           <div class="step-body">
             <h3>Configure the request</h3>
             <p>Method: <code>GET</code></p>
-            <p>URL: <code id="nocode-url">https://anashamad9.github.io/saudi-germany-hospital/api/brands.json</code></p>
+            <p>URL: <code id="nocode-url">https://digizag.github.io/Digizag-SGH/api/brands.json</code></p>
             <p>No headers or authentication needed.</p>
           </div>
         </div>
